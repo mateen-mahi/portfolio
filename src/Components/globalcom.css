@@ -1,0 +1,74 @@
+.homeContainer {
+  position: relative;
+  overflow: hidden;
+}
+.hometext {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  width: 250px;
+}
+.hometext h1 {
+  color: #fff;
+  text-shadow: 1px 1px 10px black;
+  text-align: center;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 2.3rem;
+}
+.scrollGif {
+  position: absolute;
+  right: 10%;
+  bottom: 40%;
+  width: 70px;
+}
+
+@media screen and (max-width: 1068px) {
+  .hometext {
+    right: 20%;
+  }
+  .scrollGif {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .hometext {
+    right: 10%;
+  }
+  .scrollGif {
+    right: 10px;
+    bottom: 40%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .hometext {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .hometext {
+    top: 15%;
+    left: 10%;
+    opacity: 1;
+    width: 150px;
+  }
+  .hometext h1 {
+    font-size: 1.6rem;
+  }
+  .scrollGif {
+    right: 10px;
+    top: 25%;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .hometext {
+    top: 1%;
+  }
+  .scrollGif {
+    top: 15%;
+  }
+}

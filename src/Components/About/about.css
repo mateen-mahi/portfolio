@@ -1,0 +1,41 @@
+.aboutContainer {
+  background-color: #144454;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #fff;
+  padding: 20px;
+  width: 95%;
+  margin: 40px auto;
+}
+.aboutContainer p {
+  text-align: justify;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 2;
+}
+
+.aboutContainer h5 {
+  font-weight: 500;
+  color: #fff;
+  font-family: 1rem;
+  text-shadow: 1px 1px 10px black;
+}
+.aboutContainer p span {
+  color: rgb(93, 187, 250);
+  padding: 10px 0px;
+}
+
+.aboutContainer h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 10px;
+  text-shadow: 1px 1px 10px black;
+}
+
+@media screen and (max-width: 400px) {
+  .aboutContainer p {
+    text-align: left;
+  }
+}

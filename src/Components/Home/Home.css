@@ -1,0 +1,89 @@
+.projectHistory {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  position: relative;
+  margin-right: 20px;
+  z-index: 20;
+}
+.workdetailbox {
+  background-color: #144454;
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #fff;
+  text-align: center;
+  margin: 100px auto;
+}
+.workdetailbox .numbers {
+  border-bottom: 2px dotted rgb(79, 78, 78);
+}
+.numbers p span {
+  padding: 0px 10px;
+  color: rgb(57, 250, 253);
+}
+.workdetailbox .numbers p,
+.workdetailbox .projecDetail p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .projectHistory {
+    width: 100%;
+    margin: 100px auto 0px auto;
+  }
+}
+
+@media screen and (max-width: 817px) {
+  .projectHistory {
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  .workdetailbox {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projectHistory {
+    margin-top: 450px;
+    width: auto;
+  }
+}
+
+.myStory {
+  background-color: #144454;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #fff;
+  padding: 20px;
+  width: 95%;
+  margin: 30px auto;
+}
+
+.myStory h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 10px;
+  text-shadow: 1px 1px 10px black;
+}
+
+.myStory p {
+  text-align: justify;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 400px) {
+  .myStory p {
+    text-align: left;
+  }
+}

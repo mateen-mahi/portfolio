@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #02162b;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.button {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #47c9f5;
+  color: #fff;
+  box-shadow: 0px 0px 10px #000;
+  transition: 0.6s all;
+}
+.button:hover {
+  color: #47c9f5;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.videoContainer {
+  width: 100vw;
+  height: 80vh;
+  z-index: -1;
+}
+
+.videoContainer video {
+  width: 100%;
+  object-fit: contain;
+  z-index: -1;
+  border-radius: 5%;
+  box-shadow: 2px 2px 20px #000;
+}
+
+.copywriteText {
+  margin: 50px auto;
+  background-color: #144454;
+  border-radius: 20px;
+  width: 50%;
+  box-shadow: 0px 0px 10px #fff;
+}
+
+.copywriteText p {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  padding: 50px;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 642px) {
+  .copywriteText {
+    width: auto;
+  }
+}
+
+.Typewriter {
+  color: #fff;
+  position: absolute;
+  text-shadow: 1px 1px 10px black;
+  overflow: hidden;
+  top: 40%;
+  right: 30%;
+  width: 200px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 400px) {
+  .Typewriter {
+    right: 10%;
+  }
+}
