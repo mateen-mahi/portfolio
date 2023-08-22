@@ -1,14 +1,14 @@
 .aboutContainer {
-  background-color: #144454;
+  background-color:var(--boxes-bg);
   border-radius: 20px;
-  box-shadow: 0px 0px 10px #fff;
+  box-shadow: 0px 0px 10px var(--light-shadow);
   padding: 20px;
   width: 95%;
   margin: 40px auto;
 }
 .aboutContainer p {
   text-align: justify;
-  color: #fff;
+  color:var(--text-color);
   font-weight: 500;
   padding: 10px;
   line-height: 2;
@@ -16,9 +16,9 @@
 
 .aboutContainer h5 {
   font-weight: 500;
-  color: #fff;
+  color:var(--text-color);
   font-family: 1rem;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 10px var(--dark-shadow);
 }
 .aboutContainer p span {
   color: rgb(93, 187, 250);
@@ -27,11 +27,11 @@
 
 .aboutContainer h1 {
   text-align: center;
-  color: #fff;
+  color:var(--text-color);
   font-weight: 700;
   font-size: 2rem;
   padding: 10px;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 10px var(--dark-shadow);
 }
 
 @media screen and (max-width: 400px) {

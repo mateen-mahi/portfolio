@@ -1,0 +1,12 @@
+.util-container ,
+.summary-cls,
+.util-heading {
+background-color: var(--boxes-bg);
+color: var(--text-color);
+box-shadow: 1px 1px 10px var(--light-shadow);
+border-radius: 10px;
+padding:5px 30px;
+margin:20px auto;
+}
+
+

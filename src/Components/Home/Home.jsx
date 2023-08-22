@@ -14,12 +14,14 @@ const Home = () => {
         <div className="hometext">
           <h1>Innovative and creative solutions.</h1>
         </div>
+        <a href="#bottom-side">
         <img
           className="scrollGif"
           data-aos="fade-up"
           src={scrollGif}
           alt="scroll Gif"
-        />
+          />
+          </a>
       </div>
       <Intro />
       <div className="projectHistory">

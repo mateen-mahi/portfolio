@@ -3,7 +3,7 @@
   top: 100px;
   width: 500px;
   z-index: 10;
-  background-color: #144454;
+  background-color:var(--boxes-bg);
   border-radius: 20px;
 }
 .introImg {
@@ -19,7 +19,7 @@
   border-radius: 50%;
 }
 .introImg a h3 {
-  color: #fff;
+  color:var(--text-color);
   text-align: center;
 }
 
@@ -36,7 +36,7 @@
 }
 .dynamic-txts li {
   list-style: none;
-  color: #fff;
+  color:var(--text-color);
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 500;
@@ -61,8 +61,8 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background: #144454;
-  border-left: 2px solid #fff;
+  background: var(--boxes-bg);
+  border-left: 2px solid var(--text-color);
   animation: typing 3s steps(15) infinite;
 }
 @keyframes typing {
@@ -88,16 +88,33 @@
   margin: auto;
 }
 
-.iconP {
-  color: white;
+.linkedin , .facebook, .instagram , .twitter , .github{
+  color:var(--text-color);
   font-weight: 800;
   font-size: 1.6rem;
   transition: 0.6s color;
 }
 
-.iconP:hover {
-  color: #47c9f5;
+.linkedin:hover {
+  color: #050220;
 }
+
+.facebook:hover {
+  color: #2e2bdb;
+}
+
+.twitter:hover {
+  color:#47c9f5;
+}
+
+.instagram:hover{
+  color:rgb(143, 5, 28);
+}
+
+.github:hover{
+  color: #000;
+}
+
 
 .adressP {
   margin: auto;
@@ -107,7 +124,7 @@
 
 .adressP p,
 .adressP h4 {
-  color: #fff;
+  color:var(--text-color);
   text-align: center;
 }
 .adressbtn {

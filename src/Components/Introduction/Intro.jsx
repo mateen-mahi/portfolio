@@ -13,7 +13,7 @@ const Intro = () => {
       icon: "error",
       title: "Service Interruption",
       text: "Temporary Contact Unavailable",
-      footer: '<a href="/contact">Click Access Alternate Contact Options</a>',
+      footer: '<a href="/contact/#contactForm">Click Access Alternate Contact Options</a>',
     });
   };
 
@@ -51,7 +51,7 @@ const Intro = () => {
               <a
                 href="https://www.linkedin.com/in/m-mateen-048555249/"
                 target="_blank"
-                className="iconP"
+                className="linkedin"
               >
                 <AiFillLinkedin />
               </a>
@@ -60,7 +60,7 @@ const Intro = () => {
               <a
                 href="https://twitter.com/MateenMahi74916"
                 target="_blank"
-                className="iconP"
+                className="twitter"
               >
                 <AiOutlineTwitter />
               </a>
@@ -69,7 +69,7 @@ const Intro = () => {
               <a
                 href="https://web.facebook.com/profile.php?id=100072474049162"
                 target="_blank"
-                className="iconP"
+                className="facebook"
               >
                 <AiFillFacebook />{" "}
               </a>
@@ -78,7 +78,7 @@ const Intro = () => {
               <a
                 href="https://www.instagram.com/mateen_mahi/"
                 target="_blank"
-                className="iconP"
+                className="instagram"
               >
                 <FiInstagram />
               </a>
@@ -87,7 +87,7 @@ const Intro = () => {
               <a
                 href="https://github.com/mateen-mahi"
                 target="_blank"
-                className="iconP"
+                className="github"
               >
                 <AiFillGithub />
               </a>

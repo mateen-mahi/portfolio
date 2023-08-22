@@ -1,18 +1,18 @@
 .inputContainer {
   margin: 200px auto;
-  background-color: #144454;
+  background-color:var(--boxes-bg);
   border-radius: 20px;
   padding: 30px 10px;
-  box-shadow: 0px 0px 10px #fff;
+  box-shadow: 0px 0px 10px var(--light-shadow);
 }
 
 .inputContainer h1 {
   font-weight: 600;
-  color: #fff;
+  color: var(--text-color);
   font-size: 2rem;
   text-align: center;
   padding: 10px;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 10px var(--dark-shadow);
 }
 
 .inputContainer input,
@@ -20,13 +20,21 @@
   width: 70%;
   padding: 10px 15px;
   border-radius: 10px;
-  background-color: #02162b;
+  background-color:var(--contact-input-bg);
   outline: none;
   border: none;
-  color: #fff;
+  color:var(--text-color);
+  font-weight: 600;
   margin: 15px auto;
   display: block;
 }
+
+.inputContainer input:focus,
+.inputContainer textarea:focus {
+background-color: var(--input-bg-focus);
+color:var(--input-txt-focus);
+}
+
 
 .formbtn {
   margin-top: 10px;

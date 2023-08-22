@@ -12,12 +12,14 @@ const Home = () => {
         <div className="videoContainer" data-aos="zoom-out">
           <video src={bgAbout} loop autoPlay muted></video>
         </div>
+        <a href="#bottom-side">
         <img
           className="scrollGif"
           data-aos="fade-up"
           src={scrollGif}
           alt="scroll Gif"
-        />
+          />
+          </a>
       </div>
       <div className="homeSlider">
         <Typewriter
@@ -73,7 +75,7 @@ const Home = () => {
         <div className="aboutContainer" data-aos="fade-right">
           <h5>CS 101</h5>
           <p>
-            <span>2023 - In Progress</span>
+            <span>2023</span>
             <br />
             CS 101 is an introductory course in computer science offered by many
             universities and online learning platforms. The course typically

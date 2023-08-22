@@ -7,6 +7,7 @@ import Contact from "./Components/Contact/Contact";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Services from "./Components/OurServices/Services";
 import Navbar from "./Components/navbar/Navbar";
+import ScrollButton from "./Components/ScroolBtn/Scrollbtn";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 function App() {
@@ -17,7 +18,6 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -25,8 +25,9 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/services" element={<Services />} />
         </Routes>
+        <ScrollButton/>
         <div className="copywriteText" data-aos="flip-up">
-          <p> &copy; 2023 InnovX Solutions. All rights reserved.</p>
+          <p id="bottom-side"> &copy; 2023 InnovX Solutions. All rights reserved.</p>
         </div>
       </BrowserRouter>
     </>

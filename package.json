@@ -15,7 +15,9 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.0",
+    "react-switch": "^7.0.0",
     "sweetalert2": "^11.7.3",
+    "switch": "^0.0.0",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {

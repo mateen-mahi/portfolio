@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RxCrossCircled } from "react-icons/rx";
 import { FaHamburger } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import ChangeMode from "./CHangeMode/ChangeMode"
 import "./Navbar.css";
 const Navbar = () => {
   const [toggleClass, setToggleClass] = useState({
@@ -44,14 +45,14 @@ const Navbar = () => {
             </div>
             <ul className="navList">
               <li className="listItems">
-                <NavLink to="/" activeClassName="active" className="navLinks">
+                <NavLink to="/" activeclassname="active" className="navLinks">
                   Home
                 </NavLink>
               </li>
               <li className="listItems">
                 <NavLink
                   to="/about"
-                  activeClassName="active"
+                  activeclassname="active"
                   className="navLinks"
                 >
                   About
@@ -60,7 +61,7 @@ const Navbar = () => {
               <li className="listItems">
                 <NavLink
                   to="/contact"
-                  activeClassName="active"
+                  activeclassname="active"
                   className="navLinks"
                 >
                   Contact
@@ -69,7 +70,7 @@ const Navbar = () => {
               <li className="listItems">
                 <NavLink
                   to="/portfolio"
-                  activeClassName="active"
+                  activeclassname="active"
                   className="navLinks"
                 >
                   Portfolio
@@ -78,11 +79,16 @@ const Navbar = () => {
               <li className="listItems">
                 <NavLink
                   to="/services"
-                  activeClassName="active"
+                  activeclassname="active"
                   className="navLinks"
                 >
                   Services
                 </NavLink>
+              </li>
+              
+              <li className="listItems">
+                <ChangeMode/>
+
               </li>
             </ul>
           </div>

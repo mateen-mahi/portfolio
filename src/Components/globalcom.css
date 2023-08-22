@@ -9,8 +9,8 @@
   width: 250px;
 }
 .hometext h1 {
-  color: #fff;
-  text-shadow: 1px 1px 10px black;
+  color: white;
+  text-shadow: 1px 1px 10px var(--box-shadow);
   text-align: center;
   font-weight: 800;
   text-transform: capitalize;

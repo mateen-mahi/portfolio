@@ -1,16 +1,24 @@
-.SkillSetCon {
+.SkillSetCon,
+.api-container {
   margin-top: 50px;
-  background-color: #144454;
+  background-color: var(--boxes-bg);
   border-radius: 20px;
+  box-shadow: 1px 1px 10px var(--light-shadow);
   padding: 30px 10px;
 }
+
+.api-container h1{
+  color: var(--text-color);
+  text-shadow: 1px 1px 10px var(--dark-shadow);
+}
+
 .rangeContainer {
   border-radius: 10px;
   padding: 0px 20px;
 }
 .rangeContainer label {
   font-weight: 500;
-  color: #fff;
+  color: var(--text-color);
   font-size: 1rem;
 }
 input[type="range"] {

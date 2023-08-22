@@ -8,11 +8,11 @@
   z-index: 20;
 }
 .workdetailbox {
-  background-color: #144454;
+  background-color:var(--boxes-bg);
   width: 250px;
   height: 200px;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px #fff;
+  box-shadow: 0px 0px 10px var(--light-shadow);
   text-align: center;
   margin: 100px auto;
 }
@@ -26,7 +26,7 @@
 .workdetailbox .numbers p,
 .workdetailbox .projecDetail p {
   font-size: 1.5rem;
-  color: #fff;
+  color:var(--text-color);
   font-weight: 800;
   text-transform: uppercase;
   padding-top: 30px;
@@ -57,9 +57,9 @@
 }
 
 .myStory {
-  background-color: #144454;
+  background-color:var(--boxes-bg);
   border-radius: 20px;
-  box-shadow: 0px 0px 10px #fff;
+  box-shadow: 0px 0px 10px var(--light-shadow);
   padding: 20px;
   width: 95%;
   margin: 30px auto;
@@ -67,16 +67,16 @@
 
 .myStory h1 {
   text-align: center;
-  color: #fff;
+  color: var(--text-color);
   font-weight: 700;
   font-size: 2rem;
   padding: 10px;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 10px var(--dark-shadow);
 }
 
 .myStory p {
   text-align: justify;
-  color: #fff;
+  color: var(--text-color);
   font-weight: 500;
   padding: 10px;
   line-height: 2;
