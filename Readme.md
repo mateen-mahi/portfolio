@@ -33,8 +33,7 @@ Check out the live version of my portfolio: [My Portfolio](https://mateenmahi.ne
 
 1. **Clone the Repository:**
 
-   ```bash
-   
+   ```bash https://github.com/mateen-mahi/portfolio.git ```   
 
 
 # Open in Browser:
