@@ -38,7 +38,7 @@ Check out the live version of my portfolio: [My Portfolio](https://mateenmahi.ne
 
 # Open in Browser:
 
-### Open your browser and go to http://localhost:3000 to view the portfolio.
+### Open your browser and go to https://mateenmahi.netlify.app/ to view the portfolio.
 
 # Customization
 ### Feel free to customize the portfolio to make it your own! Update the content, add more projects, change the styling – the possibilities are endless.
