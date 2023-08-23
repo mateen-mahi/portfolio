@@ -3,8 +3,10 @@ import bgHome from "../../styleitems/bgHome.mp4";
 import scrollGif from "../../styleitems/scroll.gif";
 import "../globalcom.css";
 import "./Home.css";
+import { objectValue } from "../../Context Hook/Context";
 
 const Home = () => {
+  const infoData = objectValue()
   return (
     <>
       <div className="homeContainer">
@@ -28,7 +30,7 @@ const Home = () => {
         <div className="workdetailbox" data-aos="fade-up">
           <div className="numbers">
             <p>
-              002<span>+</span>
+              {infoData.completedProject}<span>+</span>
             </p>
           </div>
           <div className="projecDetail">
@@ -38,8 +40,7 @@ const Home = () => {
 
         <div className="workdetailbox" data-aos="fade-down">
           <div className="numbers">
-            <p>
-              02<span>+</span>
+            <p>{infoData.satisfiedClients}<span>+</span>
             </p>
           </div>
           <div className="projecDetail">
@@ -49,8 +50,7 @@ const Home = () => {
 
         <div className="workdetailbox" data-aos="fade-up">
           <div className="numbers">
-            <p>
-              0<span>+</span>
+            <p>{infoData.experience}<span>+</span>
             </p>
           </div>
           <div className="projecDetail">
