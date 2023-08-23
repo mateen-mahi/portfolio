@@ -10,7 +10,7 @@
 }
 .hometext h1 {
   color: white;
-  text-shadow: 1px 1px 10px var(--box-shadow);
+  text-shadow: 1px 1px 10px var(--dark-shadow);
   text-align: center;
   font-weight: 800;
   text-transform: capitalize;

@@ -5,6 +5,7 @@
   z-index: 10;
   background-color:var(--boxes-bg);
   border-radius: 20px;
+  box-shadow: var(--light-shadow);
 }
 .introImg {
   position: relative;

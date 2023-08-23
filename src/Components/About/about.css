@@ -1,7 +1,7 @@
 .aboutContainer {
   background-color:var(--boxes-bg);
   border-radius: 20px;
-  box-shadow: 0px 0px 10px var(--light-shadow);
+  box-shadow:var(--light-shadow);
   padding: 20px;
   width: 95%;
   margin: 40px auto;

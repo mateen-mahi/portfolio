@@ -21,7 +21,7 @@
   --btn-txt:#fff;
   --btn-hover-txt:#47c9f5;
   --dark-shadow:#000;
-  --light-shadow:#0a0101be;
+  --light-shadow:1px 0px 13px 1px rgba(0,0,0,0.64) inset;
   --input-txt-focus:#000;
   --input-bg-focus:#fff;
   --first-logo-bg:#47c9f5;
@@ -33,18 +33,18 @@
 .light-mode {
   --text-color:#144454;
   --type-text-small:#000;
-  --body-bg: #e0e0e0;
-  --contact-input-bg: #144454;
-  --nav-link-hover: #047cf5;
-  --boxes-bg: #b1ddec;
-  --header-bg: #b1ddec;
-  --small-nav-bg:#b1ddec;
+  --body-bg: rgb(212, 168, 92);
+  --contact-input-bg: rgb(209, 147, 32);
+  --nav-link-hover:rgb(248, 167, 16);
+  --boxes-bg: wheat;
+  --header-bg: wheat;
+  --small-nav-bg:wheat;
   --btn-bg: #047cf5;
   --btn-hover-bg:#144454 ;
   --btn-txt: #ffffff;
   --btn-hover-txt: #fff;
   --dark-shadow: #5a5858;
-  --light-shadow: #131212;
+  --light-shadow:1px 0px 13px 1px rgba(0,0,0,0.64) inset;
   --input-txt-focus: #000;
   --input-bg-focus: #ffffff;
   --first-logo-bg:#02162b;
@@ -53,6 +53,22 @@
 }
 
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background:var(--boxes-bg);
+}
+
+::-webkit-scrollbar-thumb{
+  background:var(--btn-bg);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:var(--btn-hover-bg);
+}
 
 
 
@@ -83,6 +99,7 @@ li {
   color:var(--btn-txt);
   text-shadow: 1px 1px 10px var(--dark-shadow);
   transition: 0.6s all;
+  box-shadow: var(--light-shadow);
 }
 .button:hover {
   color:var(--btn-hover-txt);
@@ -93,6 +110,7 @@ li {
 .videoContainer {
   width: 100%;
   height: 80vh;
+  box-shadow: var(--light-shadow);
   z-index: -1;
 }
 
@@ -100,7 +118,6 @@ li {
   width: 100%;
   object-fit: contain;
   z-index: -1;
-  border-radius: 5%;
   text-shadow: 1px 1px 10px var(--dark-shadow);
 }
 
@@ -109,7 +126,7 @@ li {
   background-color:var(--boxes-bg);
   border-radius: 20px;
   width: 50%;
-  box-shadow: 0px 0px 10px var(--light-shadow);
+  box-shadow:var(--light-shadow);
 }
 
 .copywriteText p {
