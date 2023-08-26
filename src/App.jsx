@@ -11,9 +11,11 @@ import ScrollButton from "./Components/ScroolBtn/Scrollbtn";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 function App() {
+
   useEffect(() => {
     AOS.init({ duration: 2000 });
-  }, []);
+  }, [])  
+  
   return (
     <>
       <BrowserRouter>
