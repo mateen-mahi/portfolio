@@ -1,5 +1,5 @@
 .inputContainer {
-  margin: 200px auto;
+  margin:300px auto 200px auto;
   background-color:var(--boxes-bg);
   border-radius: 20px;
   padding: 30px 10px;
@@ -43,7 +43,7 @@ color:var(--input-txt-focus);
 
 @media screen and (max-width: 500px) {
   .inputContainer {
-    margin-top: 500px;
+    margin-top: 580px;
   }
   .inputContainer h1{
     font-size: 18px;
