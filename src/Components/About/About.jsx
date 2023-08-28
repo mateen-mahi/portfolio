@@ -2,14 +2,18 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import bgAbout from "../../styleitems/bgAbout.mp4";
 import scrollGif from "../../styleitems/scroll.gif";
+import { objectValue } from "../../Context Hook/Context";
 import "../globalcom.css";
 import "./about.css";
 
 const Home = () => {
+//Context Dynamic Data 
+const object = objectValue()
+
   return (
     <>
       <div className="homeContainer">
-        <div className="videoContainer" data-aos="zoom-out">
+        <div className="videoContainer" data-aos="flip-left">
           <video src={bgAbout} loop autoPlay muted></video>
         </div>
         <a href="#bottom-side">
@@ -24,7 +28,7 @@ const Home = () => {
       <div className="homeSlider">
         <Typewriter
           options={{
-            strings: ["Qualification & Our Goals"],
+            strings:[object.aboutSliderTxt],
             autoStart: true,
             loop: true,
           }}
@@ -32,70 +36,63 @@ const Home = () => {
       </div>
       <div className="container">
         <div className="aboutContainer" data-aos="fade-up">
-          <h5>SSC</h5>
+          <h5>{object.fCardHeading}</h5>
           <p>
-            <span>2013 - 2015</span>
+            <span>{object.fCardDuration}</span>
             <br />
-            SSC stands for Secondary School Certificate, which is an educational
-            qualification typically earned by students after completing 10 years
-            of schooling in countries like India, Pakistan, and Bangladesh.
+            {object.fEduDetails}
           </p>
         </div>
         <div className="aboutContainer" data-aos="fade-up">
-          <h5>HSSC</h5>
+          <h5>{object.sCardHeading}</h5>
           <p>
-            <span>2018 - 2020</span>
+            <span>{object.sCardDuration}</span>
             <br />
-            HSSC stands for Higher Secondary School Certificate, which is an
-            academic qualification awarded to students after completing 12 years
-            of education
+            {object.sEduDetails}
           </p>
         </div>
         <div className="aboutContainer" data-aos="fade-right">
-          <h5>Digital literacy</h5>
+          <h5>{object.tCardHeading}</h5>
           <p>
-            <span>2021</span>
+            <span>{object.tCardDuration}</span>
             <br />
-            Digital literacy refers to the ability to use digital technology
-            effectively and efficiently to access, evaluate, create, and
-            communicate information and ideas in various digital contexts.
-          </p>
+            {object.tEduDetails}
+           </p>
         </div>
+
         <div className="aboutContainer" data-aos="fade-left">
-          <h5>Communication &amp; soft skills</h5>
+          <h5>{object.forthCardHeading}</h5>
           <p>
-            <span>2022</span>
+            <span>{object.forthCardDuration}</span>
             <br />
-            Communication and soft skills refer to a set of abilities and
-            behaviors that enable effective and positive interactions with
-            others, including listening, speaking, writing, and nonverbal
-            communication.
+            {object.forthEduDetails}  
           </p>
         </div>
+
+
         <div className="aboutContainer" data-aos="fade-right">
-          <h5>CS 101</h5>
+          <h5>{object.fifthCardHeading}</h5>
           <p>
-            <span>2023</span>
+            <span>{object.fifthCardDuration}</span>
             <br />
-            CS 101 is an introductory course in computer science offered by many
-            universities and online learning platforms. The course typically
-            covers basic programming concepts, algorithms, data structures, and
-            problem-solving techniques. It is designed to give students a
-            foundation in computer science and prepare them for more advanced
-            courses.
+            {object.fifthEduDetails}  
           </p>
         </div>
-        <div className="aboutContainer" data-aos="flip-up">
-          <h5>Python programming</h5>
-          <p>
-            <span>2023 - In Progress</span>
-            <br />
-            Python programming is a high-level, interpreted programming language
-            used for developing various applications such as web development,
-            data analysis, artificial intelligence, and scientific computing.
-          </p>
-        </div>
+
+
+
         <div className="aboutContainer" data-aos="fade-left">
+          <h5>{object.sixCardHeading}</h5>
+          <p>
+            <span>{object.sixCardDuration}</span>
+            <br />
+            {object.sixEduDetails}  
+          </p>
+        </div>
+
+
+        
+        <div className="aboutContainer" data-aos="zoom-in">
           <h1>Our Mission</h1>
           <p className="mission">
             Our company, InnovX Solutions, is a technology-focused organization

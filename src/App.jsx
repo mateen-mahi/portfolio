@@ -9,9 +9,12 @@ import Services from "./Components/OurServices/Services";
 import Navbar from "./Components/navbar/Navbar";
 import ScrollButton from "./Components/ScroolBtn/Scrollbtn";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./Components/Footer/Footer";
 import "./App.css";
+
 function App() {
 
+  //Scroll Initial Render  For animation 
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, [])  
@@ -28,9 +31,7 @@ function App() {
           <Route path="/services" element={<Services />} />
         </Routes>
         <ScrollButton/>
-        <div className="copywriteText" data-aos="flip-up">
-          <p id="bottom-side"> &copy; 2023 InnovX Solutions. All rights reserved.</p>
-        </div>
+        <Footer/>
       </BrowserRouter>
     </>
   );

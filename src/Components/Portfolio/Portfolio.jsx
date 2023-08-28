@@ -3,17 +3,23 @@ import Typewriter from "typewriter-effect";
 import bgPortfolio from "../../styleitems/bgPortfolio.mp4";
 import scrollGif from "../../styleitems/scroll.gif";
 import Loading from "./Loading";
+import { objectValue } from "../../Context Hook/Context";
 import "../globalcom.css";
 import "./portfolio.css";
 
 const Home = () => {
-  const [card, setCard] = useState([]);
+//Context Hook Data 
+const chook = objectValue();
+
+
+//State for  Fetch api Cards 
+const [card, setCard] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
 
 
-
+//Async Function To import  data from api
 
   const getCardData = async () => {
     const res = await fetch(
@@ -24,9 +30,13 @@ const Home = () => {
     setLoading(false);
   };
 
+  //for every page render 
+
   useEffect(() => {
     getCardData();
   }, [page]);
+
+  //scroll Event Function 
 
   const handelInfiniteScroll = async () => {
     try {
@@ -41,6 +51,8 @@ const Home = () => {
       console.log(error);
     }
   };
+
+  //Perform and remove  Scroll Event 
 
   useEffect(() => {
     window.addEventListener("scroll", handelInfiniteScroll);
@@ -76,9 +88,9 @@ const Home = () => {
         <Typewriter
           options={{
             strings: [
-              "Welcome Here",
-              "Bringing ideas to life through design. ",
-              "Crafting efficient and scalable code.",
+              chook.portfolioVideoTxt1,
+              chook.portfolioVideoTxt2,
+              chook.portfolioVideoTxt3,
             ],
             autoStart: true,
             loop: true,

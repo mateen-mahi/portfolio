@@ -110,7 +110,6 @@ li {
 .videoContainer {
   width: 100%;
   height: 80vh;
-  box-shadow: var(--light-shadow);
   z-index: -1;
 }
 
@@ -121,27 +120,6 @@ li {
   text-shadow: 1px 1px 10px var(--dark-shadow);
 }
 
-.copywriteText {
-  margin: 50px auto;
-  background-color:var(--boxes-bg);
-  border-radius: 20px;
-  width: 50%;
-  box-shadow:var(--light-shadow);
-}
-
-.copywriteText p {
-  text-align: center;
-  color:var(--text-color);
-  font-weight: 600;
-  padding: 50px;
-  font-size: 0.8em;
-}
-
-@media screen and (max-width: 642px) {
-  .copywriteText {
-    width: auto;
-  }
-}
 
 .Typewriter {
   color:white;
@@ -162,4 +140,5 @@ li {
     right: 10%;
     color:var(--type-text-small);
   }
+
 }

@@ -76,46 +76,6 @@
   }
 }
 
-.pLinks {
-  padding: 20px 0px;
-  border-bottom: 2px dotted rgb(75, 75, 75);
-}
-
-.iconList {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 70%;
-  margin: auto;
-}
-
-.linkedin , .facebook, .instagram , .twitter , .github{
-  color:var(--text-color);
-  font-weight: 800;
-  font-size: 1.6rem;
-  transition: 0.6s color;
-}
-
-.linkedin:hover {
-  color: #050220;
-}
-
-.facebook:hover {
-  color: #2e2bdb;
-}
-
-.twitter:hover {
-  color:#47c9f5;
-}
-
-.instagram:hover{
-  color:rgb(143, 5, 28);
-}
-
-.github:hover{
-  color: #000;
-}
-
 
 .adressP {
   margin: auto;
@@ -134,16 +94,57 @@
   justify-content: center;
 }
 
+
+
+
+
+.hidden{
+  display: none;
+}
+
+
+.popupContact{
+  position: absolute;
+  top: -100px;
+  width: 400px;
+  z-index:44;
+
+}
+
+ .contact-cross{
+  position: absolute;
+  width: 30px;
+  height:30px;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 2px;
+  left: 340px;
+  top: 16%;
+  z-index: 88;
+  color: var(--text-color);
+}
+
+
 @media screen and (max-width: 500px) {
   .introCard {
     width: auto;
     top: 400px;
-    z-index: -1;
+    
   }
 
   .wrapper {
     display: none;
   }
+  .popupContact{
+    width:95%;
+    top:-200px;
+  }
+  .contact-cross{
+    top:47%;
+    right: 11%;
+    left: auto;
+  }
+  
 }
 
 @media screen and (max-width: 400px) {

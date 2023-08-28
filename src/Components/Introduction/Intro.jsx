@@ -1,108 +1,68 @@
-import "./intro.css";
+import { useState } from "react";
 import Mateenimg from "../../styleitems/Mateenpro.jpg";
-import { AiFillLinkedin } from "react-icons/ai";
-import { AiFillGithub } from "react-icons/ai";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { AiFillFacebook } from "react-icons/ai";
-import { FiInstagram } from "react-icons/fi";
-import Swal from "sweetalert2";
+import { ImCross } from "react-icons/im";
+import Form from "../Contact/form";
+import { objectValue } from "../../Context Hook/Context";
+import "./intro.css";
+import Social from "./Social-Icon";
 
 const Intro = () => {
-  const ContactUsHandle = () => {
-    Swal.fire({
-      icon: "error",
-      title: "Service Interruption",
-      text: "Temporary Contact Unavailable",
-      footer: '<a href="/contact/#contactForm">Click Access Alternate Contact Options</a>',
-    });
-  };
 
+  //Context Data 
+  const companyData = objectValue();
+
+//Small Contact Popup 
+  const [contactForm,setContactForm] = useState({
+    crossCls:'hidden',
+    contactCls:'hidden',
+  })
+
+  //Small Contact Submit Fuction On btnClick 
+  const ContactUsHandle = () => {
+   setContactForm((prev)=>({ 
+   crossCls: prev.crossCls === "hidden"?"contact-cross":"hidden",
+   contactCls: prev.contactCls === "hidden"?"popupContact":"hidden"
+  }));
+
+  };
   return (
     <>
+    <div onClick={ContactUsHandle} className={contactForm.crossCls}><ImCross/></div>
+    <div className={contactForm.contactCls}><Form/></div>
+
       <div className="introCard" data-aos="flip-up">
         <div className="introImg">
           <a href="">
-            <img src={Mateenimg} alt="my profile picture" />
-            <h3>Mateen Mahi</h3>
+            <img src={Mateenimg} alt="my profile picture"/>
+            <h3>{companyData.ownerName}</h3>
           </a>
           <div className="wrapper">
             <ul className="dynamic-txts">
               <li>
-                <span>founder & ceo of InnovX Solutions</span>
+                <span>{companyData.slideOne}</span>
               </li>
               <li>
-                <span>Html, CSS, Bootstrap, JS, React</span>
+                <span>{companyData.slideTwo}</span>
               </li>
               <li>
-                <span>frontend web developer </span>
+                <span>{companyData.slideThree}</span>
               </li>
               <li>
-                <span>Artificial Intelligence is my goal</span>
+                <span>{companyData.slideFour}</span>
               </li>
               <li>
-                <span>Full stack with Python (Django)</span>
+                <span>{companyData.slideFive}</span>
               </li>
             </ul>
           </div>
         </div>
-        <div className="pLinks">
-          <ul className="iconList">
-            <li className="Listicons">
-              <a
-                href="https://www.linkedin.com/in/m-mateen-048555249/"
-                target="_blank"
-                className="linkedin"
-              >
-                <AiFillLinkedin />
-              </a>
-            </li>
-            <li className="Listicons">
-              <a
-                href="https://twitter.com/MateenMahi74916"
-                target="_blank"
-                className="twitter"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="Listicons">
-              <a
-                href="https://web.facebook.com/profile.php?id=100072474049162"
-                target="_blank"
-                className="facebook"
-              >
-                <AiFillFacebook />{" "}
-              </a>
-            </li>
-            <li className="Listicons">
-              <a
-                href="https://www.instagram.com/mateen_mahi/"
-                target="_blank"
-                className="instagram"
-              >
-                <FiInstagram />
-              </a>
-            </li>
-            <li className="Listicons">
-              <a
-                href="https://github.com/mateen-mahi"
-                target="_blank"
-                className="github"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-          </ul>
+        <Social/>
+                <div className="adressP">
+          <h4>{companyData.companyName}</h4>
+          <p>{companyData.cardTagline}</p>
         </div>
         <div className="adressP">
-          <h4>InnovX Solutions</h4>
-          <p>Innovative solutions for modern technology challenges.</p>
-        </div>
-        <div className="adressP">
-          <p>
-            InnovX Solutions,SPRING VALLEY ESTATE - 50 GREEN AVENUE, BLOCK B,
-            GULBERG III, LAHORE, PAKISTAN.
-          </p>
+          <p>{companyData.companyAddress}</p>
         </div>
         <div className="adressbtn">
           <button className="button " onClick={ContactUsHandle}>

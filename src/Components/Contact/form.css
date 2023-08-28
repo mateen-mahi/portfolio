@@ -45,6 +45,9 @@ color:var(--input-txt-focus);
   .inputContainer {
     margin-top: 500px;
   }
+  .inputContainer h1{
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 400px) {

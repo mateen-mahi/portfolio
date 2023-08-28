@@ -6,6 +6,8 @@ import "./Home.css";
 import { objectValue } from "../../Context Hook/Context";
 
 const Home = () => {
+
+//Context Data 
   const infoData = objectValue()
   return (
     <>
@@ -14,7 +16,7 @@ const Home = () => {
           <video src={bgHome} loop autoPlay muted></video>
         </div>
         <div className="hometext">
-          <h1>Innovative and creative solutions.</h1>
+          <h1>{infoData.onVideoTxt}</h1>
         </div>
         <a href="#bottom-side">
         <img

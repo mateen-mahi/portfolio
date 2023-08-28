@@ -5,9 +5,17 @@ import scrollGif from "../../styleitems/scroll.gif";
 import Swal from "sweetalert2";
 import "../globalcom.css";
 import "./Services.css";
+import { objectValue } from "../../Context Hook/Context";
 
 const Home = () => {
+
+  //useState hook for out Text Area 
 const [text , setText] = useState("")
+
+//Context Hook Text Object
+const dynamic = objectValue();
+
+//Upper Case Alert 
 
   const UpperCaseAlert = () => {
     Swal.fire({
@@ -17,6 +25,7 @@ const [text , setText] = useState("")
      });
   }
 
+//LowerCase Alert 
 
   const LowerCaseAlert = () => {
     Swal.fire({
@@ -26,7 +35,7 @@ const [text , setText] = useState("")
      })}
 
 
-
+//Capitalize Alert 
 
   const CapitalizeAlert = () => {
     Swal.fire({
@@ -37,7 +46,7 @@ const [text , setText] = useState("")
   }
 
 
-
+//Delete text Alert 
 
   const DeleteAlert = () => {
     Swal.fire({
@@ -49,6 +58,8 @@ const [text , setText] = useState("")
 
 
 
+  //Copy The Text From text Area Alert 
+
   const CopyAlert = () => {
     Swal.fire({
       icon:"info",
@@ -57,19 +68,22 @@ const [text , setText] = useState("")
      });
   }
 
+//UpperCase Function 
 
   function upperCasefunc(){
     let newText = text.toUpperCase();
     setText(newText);
-  UpperCaseAlert();
-}
+  UpperCaseAlert();}
+
+  //Delete Txt Function 
+
 function deltefunc(){
     let newText = ("")
     setText(newText);
     DeleteAlert();
 }
 
-
+//Capitalize Function 
 
 function capitalizeFunc() {
     let words = text.split(" ");
@@ -83,17 +97,23 @@ function capitalizeFunc() {
   }
   
 
+//Lower Case Function 
+
 
 function lowerCaseFunc(){
     let newText = text.toLowerCase();
     setText(newText);
     LowerCaseAlert();
 }
+
+//Copy To Clip board Function 
 function copyfunc(){
     navigator.clipboard.writeText(text)
     CopyAlert();
     
 }
+
+//Vale getting from text area 
 
 function valuedefiner(event) {
     setText(event.target.value)      
@@ -122,7 +142,7 @@ function valuedefiner(event) {
       <div className="homeSlider">
         <Typewriter
           options={{
-            strings: ["Exceeding expectations with exceptional solutions. "],
+            strings: [dynamic.serviceVideoTxt],
             autoStart: true,
             loop: true,
           }}

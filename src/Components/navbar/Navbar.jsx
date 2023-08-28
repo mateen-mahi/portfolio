@@ -5,11 +5,15 @@ import { NavLink } from "react-router-dom";
 import ChangeMode from "./CHangeMode/ChangeMode"
 import "./Navbar.css";
 const Navbar = () => {
+
+  //Use State Hook For Manage Responsive Nav Bar
   const [toggleClass, setToggleClass] = useState({
     navCls: "hideNav",
     btnCls1: "sowIcon",
     btnCls2: "hideIcon",
   });
+
+  //Function To Manage HamBurger Icon 
 
   const HamHandle = () => {
     setToggleClass({
@@ -17,6 +21,8 @@ const Navbar = () => {
       btnCls1: toggleClass.btnCls1 === "hideIcon" ? "sowIcon" : "hideIcon",
     });
   };
+
+  //Function To Manage Cross Icon On Small Nav Bar
 
   const CrossHandle = () => {
     setToggleClass({
@@ -33,10 +39,10 @@ const Navbar = () => {
         </div>
         <div className="header container">
           <div className="logo">
-            <h1>
+            <a href="/"><h1>
               <span className="first-logo">Mateen </span>
               <span className="last-logo">Mahi</span>
-            </h1>
+            </h1></a>
           </div>
 
           <div className={`navbar ${toggleClass.navCls}`}>

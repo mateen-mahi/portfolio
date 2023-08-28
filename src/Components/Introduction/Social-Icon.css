@@ -1,0 +1,39 @@
+.pLinks {
+    padding: 20px 0px;
+    border-bottom: 2px dotted rgb(75, 75, 75);
+  }
+  
+  .iconList {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+  }
+  
+  .linkedin , .facebook, .instagram , .twitter , .github{
+    color:var(--text-color);
+    font-weight: 800;
+    font-size: 1.6rem;
+    transition: 0.6s color;
+  }
+  
+  .linkedin:hover {
+    color: #050220;
+  }
+  
+  .facebook:hover {
+    color: #2e2bdb;
+  }
+  
+  .twitter:hover {
+    color:#47c9f5;
+  }
+  
+  .instagram:hover{
+    color:rgb(143, 5, 28);
+  }
+  
+  .github:hover{
+    color: #000;
+  }
