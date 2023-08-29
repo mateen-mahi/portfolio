@@ -11,10 +11,24 @@
       crossorigin="anonymous"
     />
     <title>Mateen Mahi</title>
-    <style>#root{width:100%;overflow-x: hidden;}</style>
+    <style>
+    #root{width:100%;overflow-x: hidden;}
+    
+    #scroll{
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      justify-content: center;
+    
+    }
+    </style>
   </head>
   <body class="dark-mode">
-    <div id="root"></div>
+    <div id="root">
+      <div id="scroll">
+      <img src="./src/styleitems/main loading spiner.svg" alt="Scroll Gif">
+    </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

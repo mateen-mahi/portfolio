@@ -11,6 +11,7 @@ import ScrollButton from "./Components/ScroolBtn/Scrollbtn";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import "./App.css";
+import WhatsAppButton from "./Components/Whatsapp Button/Whatsapp";
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/services" element={<Services />} />
         </Routes>
+        <div id="whatsapp-btn"><WhatsAppButton/></div>
         <ScrollButton/>
         <Footer/>
       </BrowserRouter>

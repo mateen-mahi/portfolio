@@ -135,6 +135,14 @@ li {
   font-size: 1.8rem;
 }
 
+
+#whatsapp-btn{
+  position: fixed;
+  right: 10px;
+  bottom: 150px;
+  z-index: 66;
+}
+
 @media screen and (max-width: 400px) {
   .Typewriter {
     right: 10%;

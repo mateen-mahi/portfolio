@@ -1,0 +1,119 @@
+/* WhatsApp.css */
+
+.whatsapp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.messages-list {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.message {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.message:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.whatsapp-image-container {
+  position: relative;
+}
+
+.whatsapp-image {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.whatsapp-image:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-heading{
+  padding:10px;
+  background:#25D366;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+
+
+.chat-box {
+  position: absolute;
+  top: -180px;
+  right:80px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+  animation: chatAni 0.2s ease-in-out forwards;
+}
+
+@keyframes chatAni {
+  0% {
+    transform: translateX(100%) rotate(150deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg); 
+}}
+
+.message-input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.send-button {
+  background-color:#25D366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.send-button:hover {
+  background-color: #128C7E;
+}
+
+
+
+@media screen and (max-width:400px) {
+  .chat-box{ right: 5px;
+
+  }
+  
+}
+
+
+
+@media screen and (max-width:320px) {
+  .chat-box{ width:260px;
+    right: 1px;
+
+  }
+  
+}
