@@ -1,8 +1,9 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import { objectValue } from '../../Context Hook/Context';
-import"./Footer.css";
 import Social from '../Introduction/Social-Icon';
 import Location from './Location';
+import"./Footer.css";
 
 const Footer = () => {
     //Context hook Data 
@@ -14,11 +15,11 @@ const Footer = () => {
             <div className="col-md-4">
                 <div className="page-con">
                     <h3>Explore Links</h3>
-                    <a href="/">Home page</a>
-                    <a href="/about">about us</a>
-                    <a href="/contact">Contact US</a>
-                    <a href="/portfolio">portfolio</a>
-                    <a href="/services">our Services</a>
+                    <NavLink to="/">Home page</NavLink>
+                    <NavLink to="/about">about us</NavLink>
+                    <NavLink to="/contact">Contact US</NavLink>
+                    <NavLink to="/portfolio">portfolio</NavLink>
+                    <NavLink to="/services">our Services</NavLink>
                     </div>
             </div>
             <div className="col-md-8">
