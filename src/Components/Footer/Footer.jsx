@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="row">
             <div className="col-md-4">
                 <div className="page-con">
-                    <h3>Explore Links</h3>
+                    <h3>Quick Access</h3>
                     <NavLink to="/">Home page</NavLink>
                     <NavLink to="/about">about us</NavLink>
                     <NavLink to="/contact">Contact US</NavLink>
